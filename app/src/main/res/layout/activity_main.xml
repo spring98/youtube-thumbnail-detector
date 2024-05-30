@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/targetImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Target Image" />
+
+    <ImageView
+        android:id="@+id/bestFrameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Best Frame" />
+
+    <TextView
+        android:id="@+id/progressTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Progress" />
+
+    <TextView
+        android:id="@+id/bestFrameTimeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Best Frame Time" />
+
+</LinearLayout>
