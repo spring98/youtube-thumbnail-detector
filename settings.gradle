@@ -13,4 +13,5 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "youtube-thumbnail"
-include ':app'
+include ':youtube-client'
+include ':youtube-server'
