@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.widget.ImageView
 import android.widget.TextView
 import com.spring.youtube.thumbnail.ml.MobilenetV2
+import com.spring.youtube.thumbnail.utils.Server
 import kotlinx.coroutines.*
 import org.tensorflow.lite.DataType
 import org.tensorflow.lite.support.common.ops.NormalizeOp
@@ -17,6 +18,8 @@ import org.tensorflow.lite.support.image.TensorImage
 import org.tensorflow.lite.support.image.ops.ResizeOp
 import org.tensorflow.lite.support.model.Model
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
+import java.net.DatagramPacket
+import java.net.DatagramSocket
 import kotlin.math.sqrt
 
 class MainActivity : AppCompatActivity() {
@@ -47,6 +50,8 @@ class MainActivity : AppCompatActivity() {
         GlobalScope.launch(Dispatchers.IO) {
             findMostSimilarFrame(targetBitmap)
         }
+
+        Log.d(tag, Server.url)
     }
 
     private fun findMostSimilarFrame(targetBitmap: Bitmap) {
