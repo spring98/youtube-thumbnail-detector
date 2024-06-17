@@ -28,6 +28,24 @@
         android:id="@+id/serverBtn"
         android:text="서버 연결"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/jsonBtn"
+        android:text="json 연결"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageBtn"
+        android:text="image 연결"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/videoBtn"
+        android:text="video 연결"/>
+
     <WebView
         android:id="@+id/webView"
         android:layout_width="match_parent"

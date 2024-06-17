@@ -12,6 +12,7 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
+
 rootProject.name = "youtube-thumbnail"
 include ':youtube-client'
 include ':youtube-server'
